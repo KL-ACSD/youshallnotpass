@@ -9,9 +9,9 @@
 // ============================================================================
 
 const CONFIG = {
-  MAX_TABS: 15,
+  MAX_TABS: 30,
   TAB_CREATION_WINDOW: 2000,        // 2 seconds
-  MAX_TABS_IN_WINDOW: 5,            // Maximum tabs per window
+  MAX_TABS_IN_WINDOW: 30,           // Maximum tabs per window
   HEARTBEAT_INTERVAL: 5000,         // 5 seconds
   LOG_RETENTION_DAYS: 30,
   VIOLATION_COOLDOWN: 10000,        // 10 seconds between similar violations
