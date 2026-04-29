@@ -1,4 +1,4 @@
-# You Shall Not Pass - Enterprise Hardened v3.0.3
+# You Shall Not Pass ACSD Edition - Enterprise Hardened v3.0.3
 
 **A Chrome Extension for K-12 Filter Evasion Prevention**
 
@@ -26,9 +26,9 @@ You Shall Not Pass is a Chrome extension designed specifically for K-12 educatio
 
 ### Chrome Web Store (Recommended)
 
-**Extension ID**: `efggnkbeomjjanjmghbadggegjemogee`
+**Extension ID**: `ljfghpkffahaohabheflcalpcfldhilg`
 
-**Install here**: [You Shall Not Pass by Jim Tyler](https://chromewebstore.google.com/detail/you-shall-not-pass-by-jim/efggnkbeomjjanjmghbadggegjemogee)
+**Install here**: [You Shall Not Pass by Jim Tyler - ACSD](https://chromewebstore.google.com/detail/you-shall-not-pass-by-jim/ljfghpkffahaohabheflcalpcfldhilg)
 
 ### Enterprise Deployment
 
@@ -36,7 +36,7 @@ For force-installation via Google Admin Console:
 
 1. Navigate to **Devices** → **Chrome** → **Apps & Extensions**
 2. Select your organizational unit
-3. Add by extension ID: `efggnkbeomjjanjmghbadggegjemogee`
+3. Add by extension ID: `ljfghpkffahaohabheflcalpcfldhilg`
 4. Set installation policy to **Force Install**
 5. Optionally pin to toolbar for visibility
 
@@ -54,9 +54,9 @@ For force-installation via Google Admin Console:
 
 ### Official Extension Verification
 
-**Official Extension ID**: `efggnkbeomjjanjmghbadggegjemogee`
+**Official Extension ID**: `ljfghpkffahaohabheflcalpcfldhilg`
 
-**Official Chrome Web Store Link**: [You Shall Not Pass by Jim Tyler](https://chromewebstore.google.com/detail/you-shall-not-pass-by-jim/efggnkbeomjjanjmghbadggegjemogee)
+**Official Chrome Web Store Link**: [You Shall Not Pass by Jim Tyler - ACSD](https://chromewebstore.google.com/detail/you-shall-not-pass-by-jim/ljfghpkffahaohabheflcalpcfldhilg)
 
 Always install from the official Chrome Web Store listing. Do not install modified versions from third-party sources or unofficial repositories.
 
@@ -111,7 +111,7 @@ The extension codebase has been designed to minimize security vulnerabilities:
 - ✅ No third-party libraries with known vulnerabilities
 
 **Open Source Transparency:**
-- Complete source code available at: https://github.com/jimrtyler/youshallnotpass
+- Complete source code available at: https://github.com/KL-ACSD/youshallnotpass
 - Community auditing encouraged
 - Issue reporting via GitHub Issues
 - Pull requests accepted for security improvements
@@ -205,7 +205,7 @@ Default configuration in `background.js`:
 
 ```javascript
 const CONFIG = {
-  MAX_TABS: 15,
+  MAX_TABS: 30,
   TAB_CREATION_WINDOW: 2000,        // 2 seconds
   MAX_TABS_IN_WINDOW: 5,            // Maximum tabs per window
   HEARTBEAT_INTERVAL: 5000,         // 5 seconds
@@ -328,7 +328,6 @@ The extension maintains persistent connections between content scripts and the b
 | Permission | Purpose |
 |------------|---------|
 | `tabs` | Tab management and lifecycle monitoring |
-| `scripting` | Content script injection for protection |
 | `storage` | Forensic log persistence |
 | `webNavigation` | Service Worker proxy detection |
 | `declarativeNetRequest` | Static rule enforcement |
@@ -413,11 +412,11 @@ The extension maintains persistent connections between content scripts and the b
 ```json
 {
   "ExtensionInstallForcelist": [
-    "efggnkbeomjjanjmghbadggegjemogee;https://clients2.google.com/service/update2/crx"
+    "ljfghpkffahaohabheflcalpcfldhilg;https://clients2.google.com/service/update2/crx"
   ],
   "ExtensionInstallBlocklist": ["*"],
   "ExtensionInstallAllowlist": [
-    "efggnkbeomjjanjmghbadggegjemogee"
+    "ljfghpkffahaohabheflcalpcfldhilg"
   ]
 }
 ```
